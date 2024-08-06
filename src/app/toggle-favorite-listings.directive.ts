@@ -6,10 +6,10 @@ import { JobListingId } from "./models";
     selector: '[appToggleFavoriteListing]',
     standalone: true
 })
-export class toggleFavoriteListingDirective {
+export class ToggleFavoriteListingDirective {
     private favoriteJobsService = inject(FavoriteJobsService);
 
-    @Input({required: true})
+    @Input({required: true, alias: 'appToggleFavoriteListing'})
     favoriteListingId!: JobListingId;
 
     @HostListener('click')
