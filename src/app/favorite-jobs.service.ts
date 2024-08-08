@@ -27,4 +27,8 @@ export class FavoriteJobsService {
             this.favoritesSignal.update(favorites => [...favorites, id]);
         }
     }
+
+    getFavoriteJobs(){
+        return this.storageService.get(this.FAVORITE_JOBS_KEY);
+    }
 }

@@ -21,4 +21,7 @@ protected favoriteJobsService = inject(FavoriteJobsService);
 
     @Input()
     isLoading = false;
+
+    @Input()
+    isFavoriteTable = false;
 }
