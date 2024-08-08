@@ -4,6 +4,7 @@ import { FavoriteJobsService } from "../favorite-jobs.service";
 import { JobListing } from "../models";
 import { JobListingsTableComponent } from "../shared/job-listings-table/job-listings-table.component";
 import { RouterLink } from "@angular/router";
+import { JobListingService } from "../job-listing.service";
 
 @Component({
     selector: 'app-favorite-jobs-view',
@@ -14,6 +15,7 @@ import { RouterLink } from "@angular/router";
 })
 export class FavoriteJobsViewComponent {
     protected favoriteJobsService = inject(FavoriteJobsService);
+    protected jobListingService = inject(JobListingService)
     protected data!: Signal<JobListing[]>
 
     constructor(){
@@ -21,6 +23,6 @@ export class FavoriteJobsViewComponent {
     }
 
     getFavoriteJobs(): void {
-        this.data = this.favoriteJobsService.getFavoriteJobs()
+        this.data = this.jobListingService.getFavoriteJobs();
     }
 }

@@ -23,5 +23,4 @@ export class JobListingsViewComponent {
     getAllJobs(): void{
         this.data = this.jobListingService.getAllJobs();
     }
-    
 }
