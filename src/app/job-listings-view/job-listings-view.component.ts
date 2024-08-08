@@ -2,7 +2,7 @@ import { Component, inject, Signal } from "@angular/core";
 import { JobListingService } from "../job-listing.service";
 import { JobListing } from "../models";
 import { CommonModule } from "@angular/common";
-import { JobListingsTableComponent } from "../job-listings-table/job-listings-table.component";
+import { JobListingsTableComponent } from "../shared/job-listings-table/job-listings-table.component";
 
 @Component({
     selector: "app-job-listings-view",

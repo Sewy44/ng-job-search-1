@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
 import { JobListingsViewComponent } from "./job-listings-view/job-listings-view.component";
-import { FavoriteJobsComponent } from "./favorite-jobs/favorite-jobs.component";
+import { FavoriteJobsComponent } from "./favorite-jobs-view/favorite-jobs-view.component";
 
 export const routes: Routes = [
     {path: "", component: JobListingsViewComponent},

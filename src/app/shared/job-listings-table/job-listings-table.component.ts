@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, inject, Input } from "@angular/core";
-import { JobListing } from "../models";
+import { JobListing } from "../../models";
 import { RouterLink } from "@angular/router";
-import { ToggleFavoriteListingDirective } from "../toggle-favorite-listings.directive";
-import { FavoriteJobsService } from "../favorite-jobs.service";
+import { ToggleFavoriteListingDirective } from "../../toggle-favorite-listings.directive";
+import { FavoriteJobsService } from "../../favorite-jobs.service";
 
 @Component({
     selector: 'app-job-listings-table',
